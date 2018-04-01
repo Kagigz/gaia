@@ -1,8 +1,9 @@
-# gaia
-Chatbot application for people with Alzheimer's.
+# Gaia - Chatbot application for people with Alzheimer's
 
 Video of what it looks like for now:
 https://www.youtube.com/watch?v=q0h4v9mNRNA
+
+/!\ The app isn't finished yet.
 
 ## Run it on your device
 
@@ -23,6 +24,4 @@ if you have an android phone, or
 ionic cordova run ios
 ```
 if you have an iPhone
-
-## /!\ The app isn't finished yet
 
