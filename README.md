@@ -9,7 +9,7 @@ https://youtu.be/q0h4v9mNRNA
 
 1. Install [node.js](http://nodejs.org/)
 
-2. Go into the folder, open a terminal and run
+2. Go into the application folder, open a terminal and run
 ```bash
 npm install
 ```
