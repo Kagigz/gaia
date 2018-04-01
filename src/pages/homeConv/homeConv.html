@@ -1,0 +1,51 @@
+<ion-header hidden>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+
+<div class="interaction">
+
+    <button ion-button menuToggle class="buttonMenu">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+
+
+      <button ion-button icon-only round  large color="danger" class="micButton" (click)="sendVoice()">
+        <ion-icon name="mic"></ion-icon>
+      </button>
+
+    <ion-item class="typeMessage">
+      <ion-input #input type="text" placeholder="Type here" [(ngModel)]="text"></ion-input>
+      <button ion-button icon-only item-right clear (click)="sendText()">
+        <ion-icon name="send"></ion-icon>
+      </button>
+    </ion-item>
+
+</div>
+
+  <ion-list no-lines class="chat-lines">
+    <ion-item *ngFor="let message of messages" class="chat-item" text-wrap>
+      <!--<ion-avatar item-left *ngIf="message.sender == 'api'">
+        <img src="assets/imgs/gaiaAvatar.png">
+      </ion-avatar>-->
+      <div *ngIf="message.sender == 'api'" class="bubble me">
+        <!--<ion-thumbnail item-start *ngIf="message.sender == 'api'">
+          <img src="assets/imgs/gaiaAvatar.png">
+        </ion-thumbnail>-->
+        <h3> {{message.text}} </h3>
+      </div>
+      <div *ngIf="message.sender == 'me'" class="bubble you">
+        <!--<ion-thumbnail item-end *ngIf="message.sender == 'me'">
+          <img src="assets/imgs/userAvatar.png">
+        </ion-thumbnail>-->
+        <h3> {{message.text}} </h3>
+      </div>
+
+    </ion-item>
+  </ion-list>
+
+</ion-content>

@@ -1,14 +1,18 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, Content } from 'ionic-angular';
+
+import { HomeConvPage } from '../homeConv/homeConv';
+import { HomeInteractPage } from '../homeInteract/homeInteract';
 
 @Component({
-  selector: 'page-home',
   templateUrl: 'home.html'
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
+  tab1Root = HomeInteractPage;
+  tab2Root = HomeConvPage;
+
+  constructor() {
 
   }
-
 }

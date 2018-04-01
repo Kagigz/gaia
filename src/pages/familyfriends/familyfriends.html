@@ -1,0 +1,41 @@
+<ion-header hidden>
+  <ion-navbar>
+    <ion-title>Family & Friends</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+
+  <button ion-button menuToggle class="buttonMenu">
+    <ion-icon name="menu"></ion-icon>
+  </button>
+
+  <button ion-button class="buttonPlus" (click)=openAddFriendFam()>
+    <ion-icon name="add-circle"></ion-icon>
+  </button>
+
+  <ion-grid class="contentDiv">
+  <ion-row>
+    <ion-col *ngFor="let f of friendsfamList$ | async " col-6>
+
+      <ion-card (click)=openFriendFam(f)>
+        <img src="{{f.photo}}"/>
+        <ion-card-content class="cardFriendFam">
+          <ion-card-title class="titleFriendFam">
+            {{f.name}}
+            </ion-card-title>
+            <p class="relationFriendFam" align="center">{{f.relation}}</p> 
+        </ion-card-content>
+      </ion-card>
+
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+
+</ion-content>
+
+<ion-footer>
+
+</ion-footer>

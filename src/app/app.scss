@@ -14,3 +14,37 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+
+.buttonMenu{
+  background:transparent;
+  box-shadow: none;
+  font-size: 30px;
+  margin-left:-20px;
+  left:10px;
+  top:10px;
+  color:black;
+}
+
+.buttonPlus{
+  background:transparent;
+  box-shadow: none;
+  font-size: 30px;
+  float:right;
+  top:10px;
+  color:black;
+}
+
+.buttonMenu:focus{
+  background:transparent;
+  box-shadow: none;
+}
+
+.buttonPlus:focus{
+  background:transparent;
+  box-shadow: none;
+}
+
+.contentDiv{
+  padding-top:30px;
+}

@@ -1,0 +1,41 @@
+<ion-header hidden>
+  <ion-navbar>
+    <ion-title>Reminders</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+
+  <button ion-button menuToggle class="buttonMenu">
+    <ion-icon name="menu"></ion-icon>
+  </button>
+
+  <button ion-button class="buttonPlus" (click)=openAddReminder()>
+    <ion-icon name="add-circle"></ion-icon>
+  </button>
+
+<div class="contentDiv">
+    <div *ngFor="let r of remList$ | async">
+
+      <ion-card (click)=openReminder(r)>
+        <ion-card-content class="cardFriendFam">
+          <ion-card-title class="titleFriendFam">
+            {{r.title}}
+            </ion-card-title>
+            <p>
+              {{r.details}}
+            </p>
+            <p align="right">
+              Deadline: {{r.deadline}}
+            </p>
+      </ion-card-content>
+      </ion-card>
+
+    </div>
+  </div>
+
+</ion-content>
+
+<ion-footer>
+</ion-footer>

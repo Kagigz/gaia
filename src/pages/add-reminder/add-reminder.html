@@ -1,0 +1,32 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>New reminder</ion-title>
+    <ion-buttons end>
+      <button ion-button (click)=closeModal()>
+        <ion-icon name="close"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-item>
+    <ion-label color="primary">Title</ion-label>
+    <ion-input [(ngModel)]="rem.title" required></ion-input>
+  </ion-item>
+  <ion-item>
+      <ion-label color="primary">Details</ion-label>
+      <ion-textarea [(ngModel)]="rem.details"></ion-textarea>
+  </ion-item>
+  <ion-item>
+      <ion-label color="primary">Deadline</ion-label>
+      <ion-datetime displayFormat="DD/MM/YYYY" [(ngModel)]="rem.deadline"></ion-datetime>
+    </ion-item>
+
+  <button ion-button block (click)=addReminder()>
+      Create
+  </button>
+</ion-content>

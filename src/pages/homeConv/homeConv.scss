@@ -1,0 +1,97 @@
+page-homeConv {
+    .body{
+      padding:0px;
+    }
+    .scroll-content {
+        background-color: #333;
+    }
+
+    .buttonMenu{
+      color:white;
+    }
+
+    .interaction{
+      position:fixed;
+      left:0px;
+      top:0px;
+      z-index:2;
+      background-color: black;
+      margin:0px;
+      width:100vw;
+  }
+
+    .typeMessage{
+      margin-top:70px;
+      padding-left:10px;
+      padding-right:10px;
+    }
+
+    .micButton{
+      font-size: 30px;
+      position:absolute;
+      top:10px;
+      left:50vw;
+      transform:translate(-50%,0);
+    }
+
+    h3{
+      font-size:20px !important;
+    }
+    .chat-item {
+        background-color: transparent !important;
+    }
+
+    .chat-item ion-avatar[item-left] {
+        margin-right: 0px !important;
+    }
+
+    .chat-item ion-avatar[item-right] {
+        margin-left: 0px !important;
+    }
+
+    .chat-lines{
+      margin-top:170px;
+    }
+
+    .bubble{
+        display: inline-block;
+        padding: 10px;
+        position: relative;
+    }
+
+    .me {
+        background-color: white;
+        float: left;
+        margin: 5px 0px;
+    }
+
+
+    .you {
+        background-color: #b9b6b6;
+        float: right;
+        margin: 5px 0px;
+    }
+
+    .messageUser{
+      background-color: #F2F2F2;
+      display: inline-block;
+      padding: 10px 18px;
+      position: relative;
+      vertical-align: middle;
+      margin-top:10px;
+    }
+
+    .messageGaia{
+      background-color: #FFFFFF;
+      display: inline-block;
+      padding: 10px 18px;
+      position: relative;
+      vertical-align: middle;
+    }
+
+    .gaiaImg{
+      height:30vh;
+      background-image: url("assets/imgs/userAvatar.png");
+      background-position: center;
+    }
+}

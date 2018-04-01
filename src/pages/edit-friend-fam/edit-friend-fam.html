@@ -1,0 +1,45 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{ff.name}}</ion-title>
+    <ion-buttons end>
+        <button ion-button (click)=deleteFriendFam()>
+            <ion-icon name="trash"></ion-icon>
+          </button>
+      <button ion-button (click)=closeModal()>
+        <ion-icon name="close"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-item>
+    <ion-label color="primary">Photo</ion-label>
+  </ion-item>
+  <ion-item align="center">
+    <img src="{{ff.photo}}"/>
+    <button ion-button block clear (click)="takePhoto()">Take photo</button>
+    <button ion-button block clear (click)="uploadPhoto()">Upload photo</button>
+  </ion-item>
+
+    <ion-item>
+        <ion-label color="primary">Name</ion-label>
+        <ion-input [(ngModel)]="ff.name" required></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label color="primary">Relation</ion-label>
+          <ion-input [(ngModel)]="ff.relation"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label color="primary">Details</ion-label>
+        <ion-textarea [(ngModel)]="ff.details"></ion-textarea>
+      </ion-item>
+    
+      <button ion-button block (click)=editFriendFam()>
+          Ok
+      </button>
+  
+</ion-content>

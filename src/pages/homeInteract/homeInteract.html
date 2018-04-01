@@ -1,0 +1,32 @@
+<ion-header hidden>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content class="viewInteract">
+
+  <button ion-button menuToggle class="buttonMenu">
+    <ion-icon name="menu"></ion-icon>
+  </button>
+
+
+  <div class="messageGaia">
+  <p>{{ messageAPI }}</p>
+  </div>
+
+  <button ion-button icon-only round  large color="danger" class="micButton" (click)="sendVoice()">
+    <ion-icon name="mic"></ion-icon>
+  </button>
+
+</ion-content>
+
+<ion-footer>
+  <ion-item class="typeMessage">
+    <ion-input #input type="text" placeholder="Type here" [(ngModel)]="text"></ion-input>
+    <button ion-button icon-only item-right clear (click)="sendText()">
+      <ion-icon name="send"></ion-icon>
+    </button>
+  </ion-item>
+</ion-footer>
