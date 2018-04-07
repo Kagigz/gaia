@@ -1,9 +1,22 @@
 # Gaia - Chatbot application for people with Alzheimer's
 
+January 2018 - Today
+
+Chatbot mobile app made with Ionic, using the dialogflow API and firebase.
+
+## Video
 Video of what the app looks like for now:
 https://youtu.be/q0h4v9mNRNA
 
 /!\ It's not finished yet.
+
+## Blog posts
+
+- [Ep. 0: Meet Gaia](https://agirlintech.com/2017/12/11/gaia-ep0/)
+- [Ep. 1: First decisions](https://agirlintech.com/2017/12/23/gaia-ep1/)
+- [Ep. 2: Getting started with Dialogflow](https://agirlintech.com/2018/01/08/gaia-ep2/)
+- [Ep. 3: Talk to Gaia, she can understand you](https://agirlintech.com/2018/02/22/gaia-ep3/)
+- [Ep. 4: My chatbot is getting smarter!](https://agirlintech.com/2018/04/01/gaia-ep4/)
 
 ## Run it on your device
 
