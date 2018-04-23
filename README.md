@@ -20,7 +20,7 @@ https://youtu.be/q0h4v9mNRNA
 
 ## Run it on your device
 
-1. Install [node.js](http://nodejs.org/)
+1. Install [node.js](http://nodejs.org/) & [Ionic Framework](http://ionicframework.com/)
 
 2. Create a new project on [firebase](https://console.firebase.google.com/)
 
@@ -38,7 +38,17 @@ var config = {
   };
 ```
 
-5. In the src folder, create a new file (firebase_config.ts) and paste your credentials 
+5. In the src/app folder, create a new file (app.firebase.config.ts) and paste your credentials like
+```
+export const FIREBASE_CONFIG = {
+    apiKey: "XXXXXXXXXXXX",
+    authDomain: "XXXXXXXXXXXX",
+    databaseURL: "XXXXXXXXXXXX",
+    projectId: "XXXXXXXXXXXX",
+    storageBucket: "XXXXXXXXXXXX",
+    messagingSenderId: "XXXXXXXXXXXX"
+  };
+```
 
 6. Go into the application folder, open a terminal and run
 ```bash
