@@ -20,10 +20,9 @@ import { ReminderService } from '../services/reminders.service';
 import { FriendsfamService } from '../services/friendsfam.service';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireModule } from 'angularfire2';
-import { FIREBASE_CONFIG } from '../firebase.config';
+import { FIREBASE_CONFIG } from './app.firebase.config';
 import firebase from 'firebase';
 
-firebase.initializeApp(FIREBASE_CONFIG);
 
 @NgModule({
   declarations: [
